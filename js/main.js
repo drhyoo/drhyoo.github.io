@@ -1,10 +1,10 @@
 jQuery(document).ready(function(){
-  var accordionsMenu = $('.cd-accordion-menu');
+  var accordionsMenu = $('.accordion-menu');
 
   if( accordionsMenu.length > 0 ) {
 
     accordionsMenu.each(function(){
-      var accordion = $('.cd-accordion-menu');
+      var accordion = $('.accordion-menu');
       //detect change in the input[type="checkbox"] value
       accordion.on('change', 'input[type="checkbox"]', checkAccordionsMenu);
     });

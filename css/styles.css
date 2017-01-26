@@ -1,5 +1,9 @@
 /* General Styles
 -----------------------------------*/
+html, body {
+  overflow-x:hidden;
+}
+
 .circle {
   border-radius: 50%;
   width: 179px;
@@ -74,8 +78,31 @@
   color: #212121;
 }
 
-.categoryDetails {
+.outlineEaseIn {
+  transition: .1s ease;
+}
 
+.outlineEaseIn:hover {
+  outline: 10px solid white;
+  outline-offset: -10px;
+}
+
+.categoryDetails {
+  letter-spacing: .15rem;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+
+.categoryDetails_title {
+  margin-bottom: 0%;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.categoryDetails_title:hover {
+  font-weight: 600;
 }
 
 /* ACCORDION CATEGORY ---------------------  */
@@ -101,42 +128,42 @@ li {
   margin-bottom: 0rem;
 }
 
-.cd-accordion-menu {
+.accordion-menu {
 	width: 100%;
 	max-width: 960px;
 	background: white;
 	margin: 0 auto;
 }
-.cd-accordion-menu ul {
+.accordion-menu ul {
 	/* by default hide all sub menus */
 	display: none;
 
   /* EXTEND BAR TO OVERALL PAGE */
-  margin: 0 -9999rem;
+  margin: 0 -100%;
   /* add back negative margin value */
-  padding: 0.25rem 9999rem;
+  padding: 0.25rem 100%;
   background: #212121;
 }
-.cd-accordion-menu li {
+.accordion-menu li {
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
 }
-.cd-accordion-menu input[type=checkbox] {
+.accordion-menu input[type=checkbox] {
 	/* hide native checkbox */
   display:none;
 }
-.cd-accordion-menu input[type=checkbox]:checked + label{
+.accordion-menu input[type=checkbox]:checked + label{
 
 }
-.cd-accordion-menu input[type=checkbox]:checked + label + ul,
-.cd-accordion-menu input[type=checkbox]:checked + label:nth-of-type(n) + ul {
+.accordion-menu input[type=checkbox]:checked + label + ul,
+.accordion-menu input[type=checkbox]:checked + label:nth-of-type(n) + ul {
   /* use label:nth-of-type(n) to fix a bug on safari (<= 8.0.8) with multiple adjacent-sibling selectors*/
   /* show children when item is checked */
   display: block;
 }
-.cd-accordion-menu.animated label::before {
+.accordion-menu.animated label::before {
   /* this class is used if you're using jquery to animate the accordion */
   -webkit-transition: -webkit-transform 0.3s;
   -moz-transition: -moz-transform 0.3s;
