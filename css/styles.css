@@ -4,6 +4,10 @@ html, body {
   overflow-x:hidden;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 strong {
   font-weight: 600;
 }
