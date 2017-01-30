@@ -23,3 +23,13 @@ jQuery(document).ready(function(){
   }
 
 });
+
+function hamburgerMenu() {
+    var x = document.getElementById("topNavBarul");
+    if (x.className === "navBarul") {
+        x.className += " responsive";
+    }
+    else {
+        x.className = "navBarul";
+    }
+}

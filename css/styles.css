@@ -65,12 +65,25 @@ strong {
 }
 
 .contact {
-  margin-bottom: 2%;
   letter-spacing: .15rem;
-  font-size: 1.75rem;
+  font-size: 1.6rem;
   font-style: normal;
   font-weight: 300;
   color: #757575;
+}
+
+.resume {
+  margin-bottom: 2%;
+  letter-spacing: .15rem;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  color: #757575;
+  text-decoration: none;
+}
+.resume:hover {
+  font-weight: 400;
+  color: #212121;
 }
 
 .category {
@@ -92,7 +105,7 @@ strong {
 }
 
 .outlineEaseIn:hover {
-  outline: 10px solid white;
+  outline: 10px solid;
   outline-offset: -10px;
 }
 
@@ -108,10 +121,8 @@ strong {
   margin-bottom: 0%;
   font-size: 1.5rem;
   font-weight: 700;
-}
-
-.categoryDetails_title:hover {
-  font-weight: 800;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 .footer {
@@ -181,4 +192,96 @@ li {
   -webkit-transition: -webkit-transform 0.3s;
   -moz-transition: -moz-transform 0.3s;
   transition: transform 0.3s;
+}
+
+/* PROJECT PAGE CATEGORY ---------------------  */
+/* NAV BAR :(---------------------  */
+.navBar {
+  letter-spacing: .10rem;
+  font-size: 1.75rem;
+  font-weight: 400;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.home {
+  letter-spacing: .40rem;
+  font-weight: 600;
+}
+
+ul.navBarul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 20px;
+    overflow: hidden;
+    background: rgba(33, 33, 33, .95);
+}
+
+li.navBarli {
+    float: right;
+}
+
+li.navBarli a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.homeNav {
+  float: left;
+}
+
+li.homeNav a:hover {
+  color: #0FA0CE;
+}
+li.sideNav a:hover {
+  background-color: #0FA0CE;
+}
+li.hamburgerIcon {
+  display: none;
+}
+li.hamburgerIcon a:hover {
+  background-color: #0FA0CE;
+}
+
+@media screen and (max-width:550px) {
+  ul.navBarul li:not(:first-child) {
+    display: none;
+  }
+  ul.navBarul li.hamburgerIcon {
+    float: right;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+}
+
+@media screen and (max-width:550px) {
+  ul.navBarul.responsive {
+    position: relative;
+  }
+  ul.navBarul.responsive li.hamburgerIcon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.navBarul.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.navBarul.responsive li.sideNav a {
+    display: block;
+    text-align: center;
+    background-color: #757575;
+    /* FULL WIDTH EXPAND */
+    margin: 0 -9999px;
+    /* add back negative margin value */
+    padding: 14px 9999px;
+  }
+  ul.navBarul.responsive li.sideNav a:hover {
+    background-color: #0FA0CE;
+  }
 }
