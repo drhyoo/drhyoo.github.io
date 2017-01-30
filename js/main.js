@@ -15,7 +15,6 @@ jQuery(document).ready(function(){
       console.log(checkbox.prop('checked'));
       if ( checkbox.prop('checked')) {
           checkbox.siblings('ul').attr('style', 'display:none;').slideDown(600);
-          checkboxSearchBox.siblings('ul').attr('style', 'display:none;').slideDown(600);
       }
       else {
           checkbox.siblings('ul').attr('style', 'display:block;').slideUp(600);
@@ -33,3 +32,17 @@ function hamburgerMenu() {
         x.className = "navBarul";
     }
 }
+
+window.onload = function(){
+  if(window.location.hash) {
+        var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
+        if (hash === "projects") {
+          document.getElementById("group-1").checked = true;
+          document.getElementById(hash).scrollIntoView();
+        }
+        if (hash === "designs") {
+          document.getElementById("group-2").checked = true;
+          document.getElementById(hash).scrollIntoView();
+        }
+  }
+};
