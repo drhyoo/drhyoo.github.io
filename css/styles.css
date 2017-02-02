@@ -284,5 +284,9 @@ li.hamburgerIcon a:hover {
   ul.navBarul.responsive li.sideNav a:hover {
     background-color: #0FA0CE;
   }
+}
 
+.titleRow {
+  text-align: center;
+  margin-top: 28px;
 }
