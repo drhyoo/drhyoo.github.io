@@ -275,7 +275,7 @@ li.hamburgerIcon a:hover {
   ul.navBarul.responsive li.sideNav a {
     display: block;
     text-align: center;
-    background-color: #757575;
+    background: rgba(117, 117, 117, .4);
     /* FULL WIDTH EXPAND */
     margin: 0 -9999px;
     /* add back negative margin value */
