@@ -34,28 +34,30 @@ strong {
   transition: all 1s;
   position:absolute;
 
-  -webkit-backface-visibility: hidden;
+  /* -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
-  -webkit-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d; */
 }
 
+/* 
 .circleRotate:first-child {
-  -webkit-transform: rotateY(180deg); /* Safari and Chrome */
-  -moz-transform: rotateY(180deg); /* Firefox */
+  -webkit-transform: rotateY(180deg); 
+  -moz-transform: rotateY(180deg); 
 }
 
 .circle:hover .circleRotate{
   transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg); /* Safari and Chrome */
-  -moz-transform: rotateY(180deg); /* Firefox */
+  -webkit-transform: rotateY(180deg); 
+  -moz-transform: rotateY(180deg); 
 }
 
 .circle:hover .circleRotate:first-child{
   z-index: 1;
   transform: rotateY(0deg);
-  -webkit-transform: rotateY(0deg); /* Safari and Chrome */
-  -moz-transform: rotateY(0deg); /* Firefox */
-}
+  -webkit-transform: rotateY(0deg); 
+  -moz-transform: rotateY(0deg); 
+} 
+*/
 
 .profileName {
   letter-spacing: .40rem;
