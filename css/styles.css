@@ -25,7 +25,7 @@ strong {
   border: 2px solid black;
 }
 
-.circleRotate {
+/* .circleRotate {
   display: block;
   margin: auto auto;
   border-radius: 50%;
@@ -34,10 +34,10 @@ strong {
   transition: all 1s;
   position:absolute;
 
-  /* -webkit-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
-  -webkit-transform-style: preserve-3d; */
-}
+  -webkit-transform-style: preserve-3d;
+} */
 
 /* 
 .circleRotate:first-child {
